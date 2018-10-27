@@ -1,0 +1,12 @@
+printf("Give me the row number of the upside down triangle: ");   
+int space=0, j, star, n, i;
+scanf("%d", &n);
+star = n*2-1;
+for(i=0;i<n;i++){
+    printf("   ");
+    for(j=0;j<space;j++) printf(" ");
+    for(j=0;j<star;j++) printf("*");
+    star-=2;
+    space++;
+    printf("\n");
+}
