@@ -1,0 +1,12 @@
+printf("Give me the row number of the triangle: ");
+int space, j, star=1, n, i;
+scanf("%d", &n);
+space = n-1;
+for(i=0;i<n;i++){
+    printf("   ");
+    for(j=0;j<space;j++) printf(" ");
+    for(j=0;j<star;j++) printf("*");
+    space--;
+    star = star+2;
+    printf("\n");
+}
